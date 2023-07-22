@@ -2,4 +2,4 @@
 
 Yes, it's garbage.
 
-Install script in the repo.
+``wget run https://raw.githubusercontent.com/XDuskAshes/dasl/main/install.lua``
