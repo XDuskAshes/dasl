@@ -1,0 +1,7 @@
+DASL - Dusks Alternative Shell Look
+Version 1.0.0
+By default it is styled:
++[dir]
+|>>
+
+The cursor (>>) can be changed by editing /dasl/.config
