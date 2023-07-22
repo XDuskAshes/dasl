@@ -17,3 +17,5 @@ else
 end
 
 print("dasl installed.")
+sleep(1)
+os.reboot()
