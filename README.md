@@ -16,6 +16,7 @@ By default, dasl it is styled as:
 ```
 
 The cursor (>>) can be changed by editing /dasl/.config
+
 For other styles, /dasl/.config can be edited for the following:
 
 Blank - leaving it blank means the default styling is used
