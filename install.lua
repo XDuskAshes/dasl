@@ -8,11 +8,13 @@ local l = {
 if fs.exists("/dasl/") then
     for k,v in pairs(l) do
         shell.run("wget",v,k)
+        sleep(0.1)
     end
 else
     fs.makeDir("/dasl/")
         for k,v in pairs(l) do
             shell.run("wget",v,k)
+            sleep(0.1)
         end
 end
 

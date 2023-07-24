@@ -5,3 +5,9 @@ By default it is styled:
 |>>
 
 The cursor (>>) can be changed by editing /dasl/.config
+For other styles, /dasl/.config can be edited for the following:
+
+Blank - leaving it blank means the default styling is used
+win - Windows CMD style cursor
+bash - BASH style cursor
+cash - cash style cursor
