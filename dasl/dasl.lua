@@ -1,14 +1,10 @@
-local handle = fs.open("/dasl/.config","r")
-local curs = handle.readLine()
-handle.close()
-
 local function e(s)
     return s == nil or s == ""
 end
 
 local function cursor()
     local handle = fs.open("/dasl/.config","r")
-    local foo = handle.readLine()
+    local curs = handle.readLine()
     local style = handle.readLine()
     handle.close()
 
@@ -39,13 +35,6 @@ local function cursor()
     end
 end
 
-local function rcfg()
-    local handle = fs.open("/dasl/.config","r")
-    curs = handle.readLine()
-    handle.close()
-    print("config reloaded")
-end
-
 local function pwd()
     if shell.dir() == "" then
         print("/ (root)")
@@ -57,13 +46,13 @@ end
 while true do
     cursor()
     local i = read()
-    if i == "rcfg" then
-        rcfg()
-    elseif i == "cls" then
+    if i == "cls" then
         term.clear()
         term.setCursorPos(1,1)
     elseif i == "pwd" then
         pwd()
+    elseif i == "cfgedt" then
+        shell.run("edit /dasl/.config")
     else
         shell.run(i)
     end
