@@ -1,9 +1,9 @@
 local l = {
-    "/startup.lua",
-    "/LICENSE",
-    "/dasl/.config",
-    "/dasl/dasl.lua",
-    "/dasl/info.txt",
+    "startup.lua",
+    "LICENSE",
+    "dasl/.config",
+    "dasl/dasl.lua",
+    "dasl/info.txt",
 }
 
 local spinner = {"|","/","-","\\"}
