@@ -12,7 +12,7 @@ local stage = 0
 local x,y = term.getCursorPos()
 if fs.exists("/dasl/") then
     for k,v in pairs(l) do
-        local handle = assert(http.get("https://raw.githubusercontent.com/XDuskAshes/dasl/"..v))
+        local handle = assert(http.get("https://raw.githubusercontent.com/XDuskAshes/dasl/main/"..v))
             local toWrite = {}
             repeat
                 local a = handle.readLine()
@@ -31,7 +31,7 @@ if fs.exists("/dasl/") then
 else
     fs.makeDir("/dasl/")
         for k,v in pairs(l) do
-            local handle = assert(http.get("https://raw.githubusercontent.com/XDuskAshes/dasl/"..v))
+            local handle = assert(http.get("https://raw.githubusercontent.com/XDuskAshes/dasl/main/"..v))
             local toWrite = {}
             repeat
                 local a = handle.readLine()
