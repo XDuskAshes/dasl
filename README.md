@@ -6,7 +6,7 @@ Yes, it's garbage.
 
 DASL - Dusks Alternative Shell Look
 
-Version 1.0.1
+Version 1.0.2
 
 By default, dasl it is styled as:
 
