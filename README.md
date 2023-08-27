@@ -1,28 +1,43 @@
 # Dusks Alternative Shell Look
 
-Yes, it's garbage.
+A worse shell for a new age.
+1.0.3
 
-``wget run https://raw.githubusercontent.com/XDuskAshes/dasl/main/install.lua``
+## Features
 
-DASL - Dusks Alternative Shell Look
++ Directory switching by typing the directory
++ Autocomplete by default
++ Styleable cursor
 
-Version 1.0.2
-
-By default, dasl it is styled as:
+## Config
+(`/dasl/.config` by default)
+```
+>>
 
 ```
-+[dir]
-|>>
+### A blank config
+
 ```
++[<dir>]
+|>> _
+```
+### Customizing the config
 
-The cursor (>>) can be changed by editing /dasl/.config
+First of all, the cursor (line one) can be anything the user wants.
 
-For other styles, /dasl/.config can be edited for the following:
+The second line is where you can customize the style.
 
-Blank - leaving it blank means the default styling is used
+```
+bash
+```
+`$_`
 
-win - Windows CMD style cursor
+```
+win
+```
+`C:\_`
 
-bash - BASH style cursor
-
-cash - cash style cursor
+```
+cash
+```
+`#_`

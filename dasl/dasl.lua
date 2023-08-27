@@ -23,9 +23,9 @@ local function cursor()
     elseif style == "win" then
         local dir
             if shell.dir() == "" then
-                dir = "C:/"
+                dir = "C:\\"
             else
-                dir = "C:/"..shell.dir().."/"
+                dir = "C:\\"..shell.dir().."\\"
             end
         term.setTextColor(colors.white)
         write(dir)
